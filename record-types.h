@@ -1,0 +1,40 @@
+#ifndef RECORD_TYPES_H
+#define RECORD_TYPES_H
+
+#ifndef RECORD_PARAM_IN
+#define RECORD_PARAM_IN
+#endif
+
+#ifndef RECORD_PARAM_OUT
+#define RECORD_PARAM_OUT
+#endif
+
+#ifndef SIP_MESSAGE_MAX_LENGTH
+#define RECORD_SIP_MESSAGE_MAX_LENGTH 4096
+#endif
+
+#define PACKET_MAX_LENGTH 65535
+#define IPV4_MAX_LENGTH	16
+#define FILTER_BUF_MAX_LENGTH	4096
+#define FILE_HANDLE_BUF_MAX_SIZE	1024
+#define RECORD_PATH_LEN	512
+
+#define REQUEST_INVITE  "INVITE"
+#define REQUEST_BYE     "BYE"
+#define REQUEST_CANCEL  "CANCEL"
+
+#define RESPONSE_HEADER "SIP/2.0"
+#define RESPONSE_200_OK "OK"
+
+#define SIP_HEADER_TAG_FROM "From:"
+#define SIP_HEADER_TAG_TO   "To:"
+#define SIP_HEADER_TAG_CALLID   "Call-ID:"
+#define SIP_HEADER_TAG_CONTENT_TYPE "Content-Type:"
+#define SIP_HEADER_TAG_CONTENT_LEN  "Content-Length:"
+
+//以太网数据帧长度最小为46字节
+#ifndef RECORD_ETH_MIN_LENGTH
+#define RECORD_ETH_MIN_LENGTH 46
+#endif
+
+#endif
